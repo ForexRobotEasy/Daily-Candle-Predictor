@@ -1,0 +1,90 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                                Daily Candle Predictor |
+//|                                      Developer's site: forexroboteasy.com |
+//|                                       Developed by: Forex Robot Easy Team |
+//+------------------------------------------------------------------+
+
+//+------------------------------------------------------------------+
+//|                        Global Variables and Constants                        |
+//+------------------------------------------------------------------+
+int numSignals = 3; // Number of signals to be generated during market analysis
+
+//+------------------------------------------------------------------+
+//|                                Algorithm Analysis                                          |
+//+------------------------------------------------------------------+
+void analyzeCurrentCandle()
+{
+    // Code to analyze the current candle using advanced algorithms
+    // ...
+}
+
+void calculateStrengthFactors()
+{
+    // Code to calculate strength factors within the candle's body
+    // ...
+}
+
+void determinePreviousCandleParameters()
+{
+    // Code to determine parameters of the previous candle
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//|                                Market Prediction                                          |
+//+------------------------------------------------------------------+
+int predictMarketMovement()
+{
+    // Code to predict the further direction of market movement
+    // ...
+    return 1; // 1 indicates bullish movement, -1 indicates bearish movement
+}
+
+double predictClosingPrice()
+{
+    // Code to predict the closing price of the current candle
+    // ...
+    return 1.2345; // Example closing price prediction
+}
+
+//+------------------------------------------------------------------+
+//|                                Signal Generation                                          |
+//+------------------------------------------------------------------+
+void generateSignals()
+{
+    // Code to generate suitable signals based on user preferences and risk tolerance
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//|                                Notification Options                                      |
+//+------------------------------------------------------------------+
+void sendSignalNotification()
+{
+    // Code to implement multiple notification options for users to receive signals
+    // ...
+}
+
+//+------------------------------------------------------------------+
+//|                                         Entry Point                                                     |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    analyzeCurrentCandle();
+    calculateStrengthFactors();
+    determinePreviousCandleParameters();
+    
+    int marketMovement = predictMarketMovement();
+    double closingPrice = predictClosingPrice();
+    
+    generateSignals();
+    
+    for (int i = 0; i < numSignals; i++)
+    {
+        // Code to execute trading operations based on generated signals
+        // ...
+    }
+    
+    sendSignalNotification();
+}
